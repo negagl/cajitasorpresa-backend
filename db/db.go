@@ -10,7 +10,7 @@ import (
 
 var DB *gorm.DB
 
-func Connect() {
+func Conectar() {
 	db, err := gorm.Open(sqlite.Open("cajitasorpresa.db"), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Fallo al conectar a la BD:", err)
