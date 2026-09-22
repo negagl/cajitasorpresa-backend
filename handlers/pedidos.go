@@ -158,3 +158,40 @@ func CrearPedido(c *gin.Context) {
 
 	c.JSON(http.StatusCreated, gin.H{"data": pedidoCreado})
 }
+
+func ActualizarEstadoPedido(c *gin.Context) {
+	pedido_id_string := c.Param("pedido_id")
+	pedido_id, err := strconv.Atoi(pedido_id_string)
+
+	if err != nil {
+		log.Println("Error al convertir el pedido_id:", err)
+		c.JSON(http.StatusBadRequest, gin.H{"error": "el pedido_id no es valido"})
+		return
+	}
+
+	var body ActualizarEstadoPedidoInput
+
+	if err := c.ShouldBindJSON(&body); err != nil {
+		log.Println("Error al parsear el body:", err)
+		c.JSON(http.StatusBadRequest, gin.H{"error": "no se pudo actualizar el estado del pedido"})
+		return
+	}
+
+	var pedido models.Pedido
+
+	if err := db.DB.First(&pedido, pedido_id).Error; err != nil {
+		log.Println("Error al buscar el pedido:", err)
+		c.JSON(http.StatusNotFound, gin.H{"error": "no se encontró el pedido"})
+		return
+	}
+
+	pedido.Estado = body.Estado
+
+	if err := db.DB.Save(&pedido).Error; err != nil {
+		log.Println("Error al actualizar el estado del pedido:", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "no se pudo actualizar el estado del pedido"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"data": pedido})
+}

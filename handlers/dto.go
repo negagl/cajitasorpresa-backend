@@ -1,6 +1,9 @@
 package handlers
 
-import "time"
+import (
+	"cajitasorpresa/models"
+	"time"
+)
 
 type ExtraInput struct {
 	ExtraID  uint `json:"extra_id" binding:"required"`
@@ -23,4 +26,8 @@ type CrearPedidoInput struct {
 	FechaEntrega    time.Time              `json:"fecha_entrega" binding:"required"`
 	Extras          []ExtraInput           `json:"extras"`
 	Personalizacion []PersonalizacionInput `json:"personalizacion"`
+}
+
+type ActualizarEstadoPedidoInput struct {
+	Estado models.EstadoPedido `json:"estado" binding:"required"`
 }
