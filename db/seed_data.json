@@ -1,0 +1,1085 @@
+{
+  "boxes": [
+    {
+      "nombre": "Box amor y amistad",
+      "descripcion": "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad)\n- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas\n- Granola, yogurt y fruta de temporada picada\n- Galletas\n- Dos chocolates\n- Tarjeta personalizada\n- Decoración\n- Foto impresa de la amistad o pareja\n",
+      "precio_base": 70000,
+      "imagen": "",
+      "ingredientes": [
+        {
+          "nombre": "Fruta para jugo (3 naranjas o 1 bolsa pequeña de mora)",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2000
+        },
+        {
+          "nombre": "Pitillo",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 100
+        },
+        {
+          "nombre": "Botella",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Tarjeta colgante",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Cinta de tela",
+          "cantidad": 150.0,
+          "unidad": "cm",
+          "costo": 1500
+        },
+        {
+          "nombre": "Hilo",
+          "cantidad": 20.0,
+          "unidad": "cm",
+          "costo": 100
+        },
+        {
+          "nombre": "Papel picado",
+          "cantidad": 1.0,
+          "unidad": "pliego",
+          "costo": 1000
+        },
+        {
+          "nombre": "Caja",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 5900
+        },
+        {
+          "nombre": "Stickers",
+          "cantidad": 3.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Tarjeta personalizada",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Foto impresa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Postre",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 7000
+        },
+        {
+          "nombre": "Chocolate",
+          "cantidad": 2.0,
+          "unidad": "unidad",
+          "costo": 3000
+        },
+        {
+          "nombre": "Galleta",
+          "cantidad": 1.0,
+          "unidad": "paquete",
+          "costo": 1000
+        },
+        {
+          "nombre": "Pan",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 4000
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 3000
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 2.0,
+          "unidad": "torrejas",
+          "costo": 2000
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 500
+        },
+        {
+          "nombre": "Salsa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1600
+        },
+        {
+          "nombre": "Lechuga crespa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1000
+        },
+        {
+          "nombre": "Papel",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 250
+        },
+        {
+          "nombre": "Porta sándwich",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 400,
+          "revisar": true
+        },
+        {
+          "nombre": "Vaso",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 900
+        },
+        {
+          "nombre": "Manzana",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Fresas",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1500,
+          "revisar": true
+        },
+        {
+          "nombre": "Tenedor",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Cucharita",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Mariposa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 800
+        },
+        {
+          "nombre": "Granola",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1000,
+          "revisar": true
+        },
+        {
+          "nombre": "Yogurt",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 4000,
+          "revisar": true
+        }
+      ]
+    },
+    {
+      "nombre": "Box clasico",
+      "descripcion": "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad)\n- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas\n- Fruta de temporada picada\n- Postre\n- Tarjeta personalizada con mensaje\n- Decoración\n",
+      "precio_base": 67000,
+      "imagen": "",
+      "ingredientes": [
+        {
+          "nombre": "Fruta para jugo (3 naranjas o 1 bolsa pequeña de mora)",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2000
+        },
+        {
+          "nombre": "Pitillo",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 100
+        },
+        {
+          "nombre": "Botella",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Tarjeta colgante",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Cinta de tela",
+          "cantidad": 150.0,
+          "unidad": "cm",
+          "costo": 1500
+        },
+        {
+          "nombre": "Hilo",
+          "cantidad": 20.0,
+          "unidad": "cm",
+          "costo": 100
+        },
+        {
+          "nombre": "Papel picado",
+          "cantidad": 1.0,
+          "unidad": "pliego",
+          "costo": 1000
+        },
+        {
+          "nombre": "Caja",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 10000
+        },
+        {
+          "nombre": "Stickers",
+          "cantidad": 3.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Tarjeta personalizada",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Foto impresa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Postre",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 7000
+        },
+        {
+          "nombre": "Chocolate",
+          "cantidad": 2.0,
+          "unidad": "unidad",
+          "costo": 3000
+        },
+        {
+          "nombre": "Galleta",
+          "cantidad": 1.0,
+          "unidad": "paquete",
+          "costo": 1000
+        },
+        {
+          "nombre": "Pan",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 4000
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 3000
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 2.0,
+          "unidad": "torrejas",
+          "costo": 2000
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 500
+        },
+        {
+          "nombre": "Salsa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1600
+        },
+        {
+          "nombre": "Lechuga crespa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1000
+        },
+        {
+          "nombre": "Papel",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 250
+        },
+        {
+          "nombre": "Porta sándwich",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 400,
+          "revisar": true
+        },
+        {
+          "nombre": "Vaso",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 900
+        },
+        {
+          "nombre": "Manzana",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Fresas",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1500,
+          "revisar": true
+        },
+        {
+          "nombre": "Tenedor",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Cucharita",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Mariposa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 800
+        }
+      ]
+    },
+    {
+      "nombre": "Box esencial",
+      "descripcion": "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad)\n- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas / Deditos integrales\n- Postre / Mousse de mango sin azúcar\n- Chocolate / Galleta integral\n- Tarjeta personalizada\n- Decoración\n",
+      "precio_base": 55000,
+      "imagen": "",
+      "ingredientes": [
+        {
+          "nombre": "Fruta para jugo (3 naranjas o 1 bolsa pequeña de mora)",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2000
+        },
+        {
+          "nombre": "Pitillo",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 100
+        },
+        {
+          "nombre": "Botella",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Tarjeta colgante",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Cinta de tela",
+          "cantidad": 150.0,
+          "unidad": "cm",
+          "costo": 1500
+        },
+        {
+          "nombre": "Hilo",
+          "cantidad": 20.0,
+          "unidad": "cm",
+          "costo": 100
+        },
+        {
+          "nombre": "Papel picado",
+          "cantidad": 1.0,
+          "unidad": "pliego",
+          "costo": 1000
+        },
+        {
+          "nombre": "Caja",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 3500
+        },
+        {
+          "nombre": "Stickers",
+          "cantidad": 3.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Tarjeta personalizada",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Foto impresa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Postre (muffin o brownie)",
+          "cantidad": 1,
+          "unidad": "unidad",
+          "costo": 3000
+        },
+        {
+          "nombre": "Chocolate",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Galleta",
+          "cantidad": 1.0,
+          "unidad": "paquete",
+          "costo": 1000
+        },
+        {
+          "nombre": "Pan",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 4000
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 3000
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 2.0,
+          "unidad": "torrejas",
+          "costo": 2000
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 500
+        },
+        {
+          "nombre": "Salsa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1600
+        },
+        {
+          "nombre": "Lechuga crespa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1000
+        },
+        {
+          "nombre": "Papel",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 250
+        },
+        {
+          "nombre": "Porta sándwich",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Mantequilla",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 400,
+          "revisar": true
+        }
+      ]
+    },
+    {
+      "nombre": "Box saludable",
+      "descripcion": "- Jugo natural sin azúcar (mora, maracuyá o naranja según disponibilidad)\n- Sandwich con jamón de pollo o de pavo y queso bajo en grasa con pan integral / Deditos integrales\n- Granola, yogurt griego y fruta de temporada picada\n- Barra de cereal Tosh\n- Mousse de mango sin azúcar\n- Tarjeta personalizada\n- Foto impresa\n",
+      "precio_base": 75000,
+      "imagen": "",
+      "ingredientes": [
+        {
+          "nombre": "Fruta para jugo (3 naranjas o 1 bolsa pequeña de mora)",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2000
+        },
+        {
+          "nombre": "Pitillo",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 100
+        },
+        {
+          "nombre": "Botella",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Tarjeta colgante",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Cinta de tela",
+          "cantidad": 150.0,
+          "unidad": "cm",
+          "costo": 1500
+        },
+        {
+          "nombre": "Hilo",
+          "cantidad": 20.0,
+          "unidad": "cm",
+          "costo": 100
+        },
+        {
+          "nombre": "Papel picado",
+          "cantidad": 1.0,
+          "unidad": "pliego",
+          "costo": 1000
+        },
+        {
+          "nombre": "Caja",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 5900
+        },
+        {
+          "nombre": "Stickers",
+          "cantidad": 3.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Tarjeta personalizada",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Foto impresa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Barra Tosh",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 3000
+        },
+        {
+          "nombre": "Postre integral",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 7000
+        },
+        {
+          "nombre": "Pan integral",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 4000
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 3000
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 2.0,
+          "unidad": "torrejas",
+          "costo": 2000
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 500
+        },
+        {
+          "nombre": "Salsa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1600
+        },
+        {
+          "nombre": "Lechuga crespa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1000
+        },
+        {
+          "nombre": "Papel",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 250
+        },
+        {
+          "nombre": "Porta sándwich",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Vaso",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 900
+        },
+        {
+          "nombre": "Manzana",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Fresas",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1500,
+          "revisar": true
+        },
+        {
+          "nombre": "Tenedor",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Cucharita",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Mariposa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 800
+        },
+        {
+          "nombre": "Granola",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1000,
+          "revisar": true
+        },
+        {
+          "nombre": "Yogurt griego",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 5500,
+          "revisar": true
+        }
+      ]
+    },
+    {
+      "nombre": "Box sorpresa premium",
+      "descripcion": "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad)\n- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas / Bandejita de costeñitos (carimañolas, butifarras, bollo de mazorca y queso costeño)\n- Granola, yogurt y fruta de temporada picada\n- Galletas\n- Dos chocolates\n- Tarjeta personalizada\n- Decoración\n- Foto impresa de la amistad o pareja colgantes / Cuadro en madera con foto\n- Mini cake de cumpleaños\n- Hatsu en lata / Cerveza en lata\n- Mini bouquet de flores en claveles o margaritas / Mug personalizado con sobre de café\n",
+      "precio_base": 150000,
+      "imagen": "",
+      "ingredientes": [
+        {
+          "nombre": "Fruta para jugo (3 naranjas o 1 bolsa pequeña de mora)",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2000
+        },
+        {
+          "nombre": "Pitillo",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 100
+        },
+        {
+          "nombre": "Botella",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Tarjeta colgante",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Cinta de tela",
+          "cantidad": 300.0,
+          "unidad": "cm",
+          "costo": 4000
+        },
+        {
+          "nombre": "Hilo",
+          "cantidad": 20.0,
+          "unidad": "cm",
+          "costo": 100
+        },
+        {
+          "nombre": "Papel picado",
+          "cantidad": 2.0,
+          "unidad": "pliego",
+          "costo": 1000
+        },
+        {
+          "nombre": "Caja",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 10000
+        },
+        {
+          "nombre": "Stickers",
+          "cantidad": 3.0,
+          "unidad": "unidad",
+          "costo": 500
+        },
+        {
+          "nombre": "Tarjeta personalizada",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Foto impresa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Portaretrato blanco",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 8000
+        },
+        {
+          "nombre": "Florero cilindro",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 10000
+        },
+        {
+          "nombre": "Ferrero",
+          "cantidad": 3.0,
+          "unidad": "unidad",
+          "costo": 8000
+        },
+        {
+          "nombre": "Pan",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 4000
+        },
+        {
+          "nombre": "Jamón",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 3000
+        },
+        {
+          "nombre": "Queso",
+          "cantidad": 2.0,
+          "unidad": "torrejas",
+          "costo": 2000
+        },
+        {
+          "nombre": "Tomate",
+          "cantidad": 3.0,
+          "unidad": "torrejas",
+          "costo": 500
+        },
+        {
+          "nombre": "Salsa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1600
+        },
+        {
+          "nombre": "Lechuga crespa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1000
+        },
+        {
+          "nombre": "Papel",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 250
+        },
+        {
+          "nombre": "Porta sándwich",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 1500
+        },
+        {
+          "nombre": "Mini cake Delipostre",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 9700
+        },
+        {
+          "nombre": "Vaso",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 900
+        },
+        {
+          "nombre": "Manzana",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 2500
+        },
+        {
+          "nombre": "Fresas",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1500,
+          "revisar": true
+        },
+        {
+          "nombre": "Tenedor",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Cucharita",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 300
+        },
+        {
+          "nombre": "Mariposa",
+          "cantidad": 1.0,
+          "unidad": "unidad",
+          "costo": 4000
+        },
+        {
+          "nombre": "Granola",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 1000,
+          "revisar": true
+        },
+        {
+          "nombre": "Yogurt griego",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 5500,
+          "revisar": true
+        },
+        {
+          "nombre": "Flores",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 10000,
+          "revisar": true
+        },
+        {
+          "nombre": "Galleta",
+          "cantidad": 1,
+          "unidad": "paquete",
+          "costo": 1000,
+          "revisar": true
+        },
+        {
+          "nombre": "Blonda",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 5000,
+          "revisar": true
+        },
+        {
+          "nombre": "Globos",
+          "cantidad": 20.0,
+          "unidad": "unidad",
+          "costo": 8000
+        },
+        {
+          "nombre": "Hatsu o cerveza",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 7000,
+          "revisar": true
+        },
+        {
+          "nombre": "Foto grande",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2500,
+          "revisar": true
+        },
+        {
+          "nombre": "Letrero feliz cumple",
+          "cantidad": 1,
+          "unidad": "porción",
+          "costo": 2500,
+          "revisar": true
+        }
+      ]
+    }
+  ],
+  "extras": [
+    {
+      "nombre": "Globos helio",
+      "tipo": "complemento",
+      "precio_base": 35000,
+      "descripcion": "3 unidades de globo helio látex color pasteles"
+    },
+    {
+      "nombre": "Oso de peluche",
+      "tipo": "complemento",
+      "precio_base": 25000,
+      "descripcion": "Peluche a elección entre 4 referencias, todos al mismo valor"
+    },
+    {
+      "nombre": "Flores - mini buqué S",
+      "tipo": "complemento",
+      "precio_base": 35000,
+      "descripcion": "Astromelias o rosas, colores según disponibilidad. Tamaño S"
+    },
+    {
+      "nombre": "Flores - mini buqué M",
+      "tipo": "complemento",
+      "precio_base": 70000,
+      "descripcion": "Astromelias o rosas, colores según disponibilidad. Tamaño M"
+    },
+    {
+      "nombre": "Flores - mini buqué L",
+      "tipo": "complemento",
+      "precio_base": 140000,
+      "descripcion": "Astromelias o rosas, colores según disponibilidad. Tamaño L"
+    },
+    {
+      "nombre": "Cerveza",
+      "tipo": "adicional",
+      "precio_base": 8000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Gomitas",
+      "tipo": "adicional",
+      "precio_base": 5000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Gaseosa",
+      "tipo": "adicional",
+      "precio_base": 3000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Papitas",
+      "tipo": "adicional",
+      "precio_base": 8000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Foto impresa adicional",
+      "tipo": "adicional",
+      "precio_base": 5500,
+      "descripcion": "Precio por unidad"
+    },
+    {
+      "nombre": "Cuadro con fotografías",
+      "tipo": "adicional",
+      "precio_base": 22000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Hatsu",
+      "tipo": "adicional",
+      "precio_base": 8000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Deditos integrales",
+      "tipo": "adicional",
+      "precio_base": 12000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Waffles",
+      "tipo": "adicional",
+      "precio_base": 10000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Sandwich",
+      "tipo": "adicional",
+      "precio_base": 10000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Sandwich integral",
+      "tipo": "adicional",
+      "precio_base": 18000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Mousse de mango",
+      "tipo": "adicional",
+      "precio_base": 10000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Chicharrones",
+      "tipo": "adicional",
+      "precio_base": 27000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Chorizos y butifarra",
+      "tipo": "adicional",
+      "precio_base": 15000,
+      "descripcion": ""
+    },
+    {
+      "nombre": "Bandeja de frito",
+      "tipo": "adicional",
+      "precio_base": 15000,
+      "descripcion": "Papa, carimañola y empanadas"
+    }
+  ]
+}

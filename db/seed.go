@@ -1,83 +1,87 @@
 package db
 
 import (
-	"cajitasorpresa/models"
+	_ "embed"
+	"encoding/json"
 	"log"
+
+	"cajitasorpresa/models"
 )
 
+// seed_data.json viaja DENTRO del binario (go:embed), así que no depende de
+// la carpeta desde donde corras el programa.
+//
+//go:embed seed_data.json
+var seedJSON []byte
+
+// Structs propios del seed, a propósito NO son models.Box: si le pasaras a GORM
+// un Box con IngredientesBox lleno, intentaría insertar los ingredientes por su
+// cuenta y se duplicarían cada vez que corras el seed.
+type seedIngrediente struct {
+	Nombre   string  `json:"nombre"`
+	Cantidad float64 `json:"cantidad"`
+	Unidad   string  `json:"unidad"`
+}
+
+type seedBox struct {
+	Nombre       string            `json:"nombre"`
+	Descripcion  string            `json:"descripcion"`
+	PrecioBase   float64           `json:"precio_base"`
+	Imagen       string            `json:"imagen"`
+	Ingredientes []seedIngrediente `json:"ingredientes"`
+}
+
+type seedExtra struct {
+	Nombre      string           `json:"nombre"`
+	Tipo        models.TipoExtra `json:"tipo"`
+	Descripcion string           `json:"descripcion"`
+	PrecioBase  float64          `json:"precio_base"`
+}
+
+type seedData struct {
+	Boxes  []seedBox   `json:"boxes"`
+	Extras []seedExtra `json:"extras"`
+}
+
+// Seed sincroniza la base con seed_data.json. Es idempotente: se puede correr
+// en cada arranque. Si no existe el registro lo crea; si existe, le actualiza
+// los campos (por eso, cambiar un precio en el JSON y reiniciar basta).
 func Seed() {
-	// Crear los boxes
-	boxes := []models.Box{
-		{
-			Nombre: "Box amor y amistad",
-			Descripcion: "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad) \n" +
-				"- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas \n" +
-				"- Granola, yogurt y fruta de temporada picada \n" +
-				"- Galletas \n" +
-				"- Dos chocolates \n" +
-				"- Tarjeta personalizada \n" +
-				"- Decoración \n" +
-				"- Foto impresa de la amistad o pareja \n",
-			PrecioBase: 70000,
-			Imagen:     "",
-		},
-		{
-			Nombre: "Box clasico",
-			Descripcion: "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad) \n" +
-				"- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas \n" +
-				"- Fruta de temporada picada \n" +
-				"- Postre \n" +
-				"- Tarjeta personalizada con mensaje \n" +
-				"- Decoración \n",
-			PrecioBase: 67000,
-			Imagen:     "",
-		},
-		{
-			Nombre: "Box esencial",
-			Descripcion: "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad) \n" +
-				"- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas / Deditos integrales \n" +
-				"- Postre / Mousse de mango sin azúcar \n" +
-				"- Chocolate / Galleta integral \n" +
-				"- Tarjeta personalizada \n" +
-				"- Decoración \n",
-			PrecioBase: 55000,
-			Imagen:     "",
-		},
-		{
-			Nombre: "Box saludable",
-			Descripcion: "- Jugo natural sin azúcar (mora, maracuyá o naranja según disponibilidad) \n" +
-				"- Sandwich con jamón de pollo o de pavo y queso bajo en grasa con pan integral / Deditos integrales \n" +
-				"- Granola, yogurt griego y fruta de temporada picada \n" +
-				"- Barra de cereal Tosh \n" +
-				"- Mousse de mango sin azúcar \n" +
-				"- Tarjeta personalizada \n" +
-				"- Foto impresa \n",
-			PrecioBase: 75000,
-			Imagen:     "",
-		},
-		{
-			Nombre: "Box sorpresa premium",
-			Descripcion: "- Jugo natural con o sin azúcar (mora, maracuyá o naranja según disponibilidad) \n" +
-				"- Sandwich de jamón y queso con pan artesanal / Waffles con mermelada y fresas / Bandejita de costeñitos (carimañolas, butifarras, bollo de mazorca y queso costeño) \n" +
-				"- Granola, yogurt y fruta de temporada picada \n" +
-				"- Galletas \n" +
-				"- Dos chocolates \n" +
-				"- Tarjeta personalizada \n" +
-				"- Decoración \n" +
-				"- Foto impresa de la amistad o pareja colgantes / Cuadro en madera con foto \n" +
-				"- Mini cake de cumpleaños \n" +
-				"- Hatsu en lata / Cerveza en lata \n" +
-				"- Mini bouquet de flores en claveles o margaritas / Mug personalizado con sobre de café \n",
-			PrecioBase: 150000,
-			Imagen:     "",
-		},
+	var data seedData
+	if err := json.Unmarshal(seedJSON, &data); err != nil {
+		log.Fatal("seed_data.json no es un JSON válido:", err)
 	}
 
-	for _, box := range boxes {
-		if err := DB.FirstOrCreate(&box, models.Box{Nombre: box.Nombre}).Error; err != nil {
-			log.Println("Error al sembrar el box:", box.Nombre, err)
+	for _, sb := range data.Boxes {
+		var box models.Box
+		err := DB.Where(models.Box{Nombre: sb.Nombre}).
+			Assign(models.Box{Descripcion: sb.Descripcion, PrecioBase: sb.PrecioBase, Imagen: sb.Imagen}).
+			FirstOrCreate(&box).Error
+		if err != nil {
+			log.Println("Error al sembrar el box:", sb.Nombre, err)
+			continue // sin box.ID no se pueden crear sus ingredientes
+		}
+
+		for _, si := range sb.Ingredientes {
+			var ing models.IngredienteBox
+			err := DB.Where(models.IngredienteBox{BoxID: box.ID, Nombre: si.Nombre}).
+				Assign(models.IngredienteBox{Cantidad: si.Cantidad, UnidadDeMedida: si.Unidad}).
+				FirstOrCreate(&ing).Error
+			if err != nil {
+				log.Println("Error al sembrar el ingrediente:", sb.Nombre, "/", si.Nombre, err)
+			}
 		}
 	}
 
-	log.Println("Seed de boxes completado.")
+	for _, se := range data.Extras {
+		var extra models.Extra
+		err := DB.Where(models.Extra{Nombre: se.Nombre}).
+			Assign(models.Extra{Tipo: se.Tipo, Descripcion: se.Descripcion, PrecioBase: se.PrecioBase}).
+			FirstOrCreate(&extra).Error
+		if err != nil {
+			log.Println("Error al sembrar el extra:", se.Nombre, err)
+		}
+	}
+
+	log.Println("Seed completado.")
 }
