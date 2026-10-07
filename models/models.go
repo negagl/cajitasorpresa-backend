@@ -57,10 +57,11 @@ type Pedido struct {
 }
 
 type PedidoExtra struct {
-	ID       uint `json:"id"`
-	PedidoID uint `json:"pedido_id"`
-	ExtraID  uint `json:"extra_id"`
-	Cantidad int  `json:"cantidad"`
+	ID       uint  `json:"id"`
+	PedidoID uint  `json:"pedido_id"`
+	ExtraID  uint  `json:"extra_id"`
+	Extra    Extra `json:"extra"`
+	Cantidad int   `json:"cantidad"`
 }
 
 type PersonalizacionPedido struct {
