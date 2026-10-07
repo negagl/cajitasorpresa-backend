@@ -4,7 +4,7 @@ import (
 	"cajitasorpresa/models"
 	"log"
 
-	"gorm.io/driver/sqlite"
+	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"
 )
 
